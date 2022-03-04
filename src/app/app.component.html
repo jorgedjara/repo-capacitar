@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand navbar-light bg-light">
+    <div class="nav navbar-nav">
+        <a class="nav-item nav-link active" href="#">Sistema <span class="visually-hidden">(current)</span></a>
+        <a class="nav-item nav-link" routerLink="login" routerLinkActive="router-link-active">Login</a>
+        <a class="nav-item nav-link" routerLink="listar-juego" routerLinkActive="router-link-active">Listar Juegos</a>
+        <a class="nav-item nav-link" [routerLink]="['/agregar-juego']" routerLinkActive="router-link-active"  >Agregar Juegos</a>
+        <a class="nav-item nav-link" routerLink="listar-juegos-usuario" routerLinkActive="router-link-active">Listar Juegos Usuario</a>
+    </div>
+</nav>
+
+<div class="container">
+
+  <router-outlet></router-outlet>
+</div>  

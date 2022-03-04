@@ -1,0 +1,35 @@
+
+<div class="card">
+    <div class="card-header">
+        Agregar Juego
+    </div>
+    <div class="card-body">
+        <form [formGroup]="formularioDeJuegos" (ngSubmit)="enviarDatos()">
+        <div class="mb-3">
+          <label for="" class="form-label">Nombre Juego</label>
+          <input type="text" formControlName="nombre"
+            class="form-control" name="" id="" aria-describedby="helpId" placeholder="Escribe el nombre del juego">
+        </div>
+
+        
+        <div class="mb-3">
+            <label for="" class="form-label">Descripcion Juego</label>
+            <input type="text" formControlName="descripcion"
+              class="form-control" name="" id="" aria-describedby="helpId" placeholder="Escribe la descipcion del juego">
+          </div>
+        
+
+        <div class="mb-3">
+            <label for="" class="form-label">Cantidad de niveles</label>
+            <input type="text" formControlName="cant_n"
+              class="form-control" name="" id="" aria-describedby="helpId" placeholder="Escribe la cantidad de niveles del juego">
+          </div>        
+
+        <div class="btn-group" role="group" aria-label="">
+            <button type="submit" class="btn btn-success">Agregar</button>
+            <button type="button" class="btn btn-primary">Cancelar</button>
+        </div>
+        </form>
+    </div>
+    
+</div>

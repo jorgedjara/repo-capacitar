@@ -1,0 +1,30 @@
+
+<div class="card">
+    <div class="card-header">
+        Ingresar
+    </div>
+    <div class="card-body">
+        <form [formGroup]="formularioDeLogin" (ngSubmit)="enviarDatosLogin()">
+        <div class="mb-3">
+          <label for="" class="form-label">Usuario</label>
+          <input type="text" formControlName="usuario"
+            class="form-control" name="" id="" aria-describedby="helpId" placeholder="Escribe tu nombre de usuario">
+        </div>
+
+        
+        <div class="mb-3">
+            <label for="" class="form-label">Clave</label>
+            <input type="text" formControlName="clave"
+              class="form-control" name="" id="" aria-describedby="helpId" placeholder="Escribe la clave de usuario">
+        </div>
+          
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <p class="fw-bold mb-0">{{textoLogin}}</p>
+        </div>
+        <div class="btn-group" role="group" aria-label="">
+            <button type="submit" class="btn btn-success">Agregar</button>
+        </div>
+        </form>
+    </div>
+    
+</div>
