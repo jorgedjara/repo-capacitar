@@ -23,7 +23,7 @@ API: string="http://localhost/servidor_conexion/index.php";
     }
 
     ObtenerJuegos(){
-      return this.clienteHttp.get(this.API);
+      return this.clienteHttp.get(this.API);   
     }    
 
     ObtenerJuegosDeUsuario(id:any):Observable<any>{
