@@ -27,7 +27,7 @@ API: string="http://localhost/servidor_conexion/index.php";
     }    
 
     ObtenerJuegosDeUsuario(id:any):Observable<any>{
-      return this.clienteHttp.get(this.API+"?juegosUs="+id);
+      return this.clienteHttp.get(this.API+"?juegosUs="+id); 
     }
 
     setToken(token: string) {
